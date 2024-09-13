@@ -2,6 +2,8 @@
 
 use napi_derive::napi;
 
+// just a comment
+
 #[napi]
 pub fn sum(a: i32, b: i32) -> i32 {
   a + b
