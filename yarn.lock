@@ -77,12 +77,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@starkfire/another-napi-test-darwin-x64@npm:0.0.0":
+  version: 0.0.0
+  resolution: "@starkfire/another-napi-test-darwin-x64@npm:0.0.0"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@starkfire/another-napi-test-linux-x64-gnu@npm:0.0.0":
+  version: 0.0.0
+  resolution: "@starkfire/another-napi-test-linux-x64-gnu@npm:0.0.0"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@starkfire/another-napi-test-win32-x64-msvc@npm:0.0.0":
+  version: 0.0.0
+  resolution: "@starkfire/another-napi-test-win32-x64-msvc@npm:0.0.0"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@starkfire/another-napi-test@workspace:.":
   version: 0.0.0-use.local
   resolution: "@starkfire/another-napi-test@workspace:."
   dependencies:
     "@napi-rs/cli": "npm:^2.18.4"
+    "@starkfire/another-napi-test-darwin-x64": "npm:0.0.0"
+    "@starkfire/another-napi-test-linux-x64-gnu": "npm:0.0.0"
+    "@starkfire/another-napi-test-win32-x64-msvc": "npm:0.0.0"
     ava: "npm:^6.0.1"
+  dependenciesMeta:
+    "@starkfire/another-napi-test-darwin-x64":
+      optional: true
+    "@starkfire/another-napi-test-linux-x64-gnu":
+      optional: true
+    "@starkfire/another-napi-test-win32-x64-msvc":
+      optional: true
   languageName: unknown
   linkType: soft
 

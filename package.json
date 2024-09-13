@@ -29,8 +29,8 @@
   },
   "packageManager": "yarn@4.4.1",
   "optionalDependencies": {
-    "@starkfire/another-napi-test-win32-x64-msvc": "0.0.0",
     "@starkfire/another-napi-test-darwin-x64": "0.0.0",
-    "@starkfire/another-napi-test-linux-x64-gnu": "0.0.0"
+    "@starkfire/another-napi-test-linux-x64-gnu": "0.0.0",
+    "@starkfire/another-napi-test-win32-x64-msvc": "0.0.0"
   }
 }
