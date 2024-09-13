@@ -310,7 +310,8 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { sum, fibonacci } = nativeBinding
+const { sum, difference, fibonacci } = nativeBinding
 
 module.exports.sum = sum
+module.exports.difference = difference
 module.exports.fibonacci = fibonacci
