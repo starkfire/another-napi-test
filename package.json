@@ -1,0 +1,36 @@
+{
+  "name": "@starkfire/another-napi-test",
+  "version": "0.0.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "napi": {
+    "name": "another-napi-test",
+    "triples": {}
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.4",
+    "ava": "^6.0.1"
+  },
+  "ava": {
+    "timeout": "3m"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform",
+    "prepublishOnly": "napi prepublish -t npm",
+    "test": "ava",
+    "universal": "napi universal",
+    "version": "napi version"
+  },
+  "packageManager": "yarn@4.4.1",
+  "optionalDependencies": {
+    "@starkfire/another-napi-test-win32-x64-msvc": "0.0.0",
+    "@starkfire/another-napi-test-darwin-x64": "0.0.0",
+    "@starkfire/another-napi-test-linux-x64-gnu": "0.0.0"
+  }
+}
