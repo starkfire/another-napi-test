@@ -11,6 +11,7 @@
   "files": [
     "another-napi-test.darwin-x64.node"
   ],
+  "repository": "https://github.com/starkfire/another-napi-test",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
